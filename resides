@@ -1,0 +1,73 @@
+package main
+
+import (
+	"fmt"
+	"math"
+	"strings"
+)
+
+func main() {
+	fmt.Println(math.Floor(2.78))
+	fmt.Println(strings.Title("hello world"))
+}
+
+
+the reflect package
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+
+	fmt.Println(reflect.TypeOf(5))
+	fmt.Println(reflect.TypeOf("hello"))
+	fmt.Println(reflect.TypeOf(45.23))
+	fmt.Println(reflect.TypeOf(true))
+}
+
+
+exx 2
+package main
+
+import "fmt"
+
+func main() {
+	var originalCount int
+	var eatenCount int
+	originalCount = 10
+	eatenCount = 4
+
+	fmt.Println("I started with", originalCount, "apples.")
+	fmt.Println("Some jerk ate", eatenCount, "apples.")
+	fmt.Println("There are", originalCount-eatenCount, "apples left.")
+
+}
+
+
+// nexg
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	var length float64 = 1.2
+	var width int = 2
+
+	fmt.Println("Area is", length*float64(width))
+	fmt.Println(reflect.TypeOf(float64(width)))
+	fmt.Println("length > width?", length > float64(width))
+
+
+//	float to int
+    var length float64 = 3.75
+    	var width int = 5
+    	width = int(length)
+
+    	fmt.Println(width)
+}
